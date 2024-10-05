@@ -28,9 +28,13 @@ void subSequence(int index, vector<int> &ans, int arr[], int n, int k, int sum) 
 }
 
 int main() {
-    int n = 5;
-    int arr[5] = {1, 2, 3, 4, 5};
+    int n;
+    cin >> n;
+    int arr[3];
+    for(int i = 0; i < n; i++) cin >> arr[i];
+    int k;
+    cin >> k;
     vector<int> ans;
-    subSequence(0, ans, arr, n, 8, 0);
+    subSequence(0, ans, arr, n, k, 0);
     return 0;
 }
