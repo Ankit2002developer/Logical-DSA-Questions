@@ -50,6 +50,7 @@ bool checkIfPresent(node* head, int val) {
 }
 
 node* newHead(node* head) {
+    if(head == nullptr) return head;
     node* temp = head;
     head = head -> next;
     delete temp;
